@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TR.SystemOfLegalCases.Service.Api</name>
+    </assembly>
+    <members>
+        <member name="M:TR.SystemOfLegalCases.Service.Api.V1.LegalCases.LegalCaseController.Post(TR.SystemOfLegalCases.Application.ViewModels.LegalCases.LegalCaseAddViewModel)">
+            <summary>
+            Add a new Legal Case.
+            </summary>
+            <param name="viewmodel">Legal Case fields information.</param>
+            <returns></returns>
+            <remarks>
+            Request example
+            
+                POST /api/v1/legalcase
+                {
+                    "caseNumber" : "The case number according to the National Council of Justice (CNJ) standard. It has the format: NNNNNNN-NN.NNNN.N.NN.NNNN, where N can be any positive integer.",
+                    "courtName" : "That represents the name of the court of origin of the case. Example: Supreme Federal Court.",
+                    "lawyerResponsible" : "Representing the name of the lawyer responsible for the case."
+                }
+                
+            </remarks>
+            <response code="201">New Legal Case created.</response>
+            <response code="400">Unable create Legal Case record.</response>
+        </member>
+        <member name="M:TR.SystemOfLegalCases.Service.Api.V1.LegalCases.LegalCaseController.Put(System.Guid,TR.SystemOfLegalCases.Application.ViewModels.LegalCases.LegalCaseUpdateViewModel)">
+            <summary>
+            Updates a Legal Case record.
+            </summary>
+            <param name="id">Legal Case Identifier (guid).</param>
+            <param name="viewmodel">Legal Case to update fields information.</param>
+            <returns>Legal Case updated.</returns>
+            <remarks>
+            Request example
+            
+                PUT /api/v1/legalcase/00000000-0000-0000-0000-000000000000
+                {
+                    "id" : "00000000-0000-0000-0000-000000000000",
+                    "caseNumber" : "The case number according to the National Council of Justice (CNJ) standard. It has the format: NNNNNNN-NN.NNNN.N.NN.NNNN, where N can be any positive integer.",
+                    "courtName" : "That represents the name of the court of origin of the case. Example: Supreme Federal Court.",
+                    "lawyerResponsible" : "Representing the name of the lawyer responsible for the case."
+                }
+                
+            </remarks>
+            <response code="200">Legal Case updated.</response>
+            <response code="400">Unable update Legal Case record.</response>
+        </member>
+        <member name="M:TR.SystemOfLegalCases.Service.Api.V1.LegalCases.LegalCaseController.Delete(System.Guid)">
+            <summary>
+            Delete Legal Case record.
+            </summary>
+            <param name="id">Legal Case Identifier (guid).</param>
+            <returns>Return success of the operation.</returns>
+            <response code="200">Record deleted successfully.</response>
+            <response code="400">The record could not be deleted.</response>
+        </member>
+        <member name="M:TR.SystemOfLegalCases.Service.Api.V1.LegalCases.LegalCaseController.Get(System.Guid)">
+            <summary>
+            Get Legal Case By Id.
+            </summary>
+            <param name="id">Legal Case Identifier (guid).</param>
+            <returns>Legal Case record.</returns>
+            <response code="200">Legal Case record.</response>
+            <response code="404">Legal Case record cannot be found.</response>
+        </member>
+        <member name="M:TR.SystemOfLegalCases.Service.Api.V1.LegalCases.LegalCaseController.FindByAllFields(System.Nullable{System.Guid},System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+            <summary>
+            Find Legal Case by all fields.
+            </summary>
+            <param name="id">Legal Case Identifier (guid).</param>
+            <param name="casenumber">The case number according to the National Council of Justice (CNJ) standard. It has the format: NNNNNNN-NN.NNNN.N.NN.NNNN, where N can be any positive integer.</param>
+            <param name="courtname">That represents the name of the court of origin of the case. Example: Supreme Federal Court.</param>
+            <param name="lawyerresponsible">Representing the name of the lawyer responsible for the case.</param>
+            <param name="initial_registrationdate">(Initial date filter) Date on which the case was registered in the system.</param>
+            <param name="final_registrationdate">(Final date filter) Date on which the case was registered in the system.</param>
+            <param name="page">Page.</param>
+            <param name="pagesize">Page size.</param>
+            <param name="fieldOrder">Field for ordering: CaseNumber, CourtName, LawyerResponsible and RegistrationDate. Add DESC after field name for reverse order.</param>
+            <returns>Paged List of Legal Case.</returns>
+        </member>
+    </members>
+</doc>

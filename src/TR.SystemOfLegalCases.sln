@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TR.SystemOfLegalCases.Service.Api", "TR.SystemOfLegalCases.Service.Api\TR.SystemOfLegalCases.Service.Api.csproj", "{0FF4949C-4886-4AB0-9A64-1283D9CA340A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{578FCFE2-7A89-487F-81CC-08B148AF960E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{87977956-CD96-43AB-936A-EA52A2B140DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{0E83EF33-24F3-486D-9C16-ED6A2E4EDBEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{0C18FD23-8DA1-4C15-889D-4BB39ED1A446}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{2D84EBF5-CAB7-4AB1-A77C-C628E8458822}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{A0C00CF9-E3B2-429B-B0A6-2BD8E7EDAEEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TR.SystemOfLegalCases.Application", "TR.SystemOfLegalCases.Application\TR.SystemOfLegalCases.Application.csproj", "{0A302A46-F90B-4FC0-870E-42F5A033F063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TR.SystemOfLegalCases.Domain", "TR.SystemOfLegalCases.Domain\TR.SystemOfLegalCases.Domain.csproj", "{ABD02147-34C9-480C-A702-CF9EFC67A9AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TR.SystemOfLegalCases.Infra.Data", "TR.SystemOfLegalCases.Infra.Data\TR.SystemOfLegalCases.Infra.Data.csproj", "{FD0DE5B0-4E74-4188-B0FF-B9C37628DD6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TR.SystemOfLegalCases.CrossCutting.IoC", "TR.SystemOfLegalCases.CrossCutting.IoC\TR.SystemOfLegalCases.CrossCutting.IoC.csproj", "{02EDA878-D654-4945-833F-BD1693FC5B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FF4949C-4886-4AB0-9A64-1283D9CA340A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF4949C-4886-4AB0-9A64-1283D9CA340A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF4949C-4886-4AB0-9A64-1283D9CA340A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF4949C-4886-4AB0-9A64-1283D9CA340A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A302A46-F90B-4FC0-870E-42F5A033F063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A302A46-F90B-4FC0-870E-42F5A033F063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A302A46-F90B-4FC0-870E-42F5A033F063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A302A46-F90B-4FC0-870E-42F5A033F063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD02147-34C9-480C-A702-CF9EFC67A9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD02147-34C9-480C-A702-CF9EFC67A9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD02147-34C9-480C-A702-CF9EFC67A9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD02147-34C9-480C-A702-CF9EFC67A9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0DE5B0-4E74-4188-B0FF-B9C37628DD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0DE5B0-4E74-4188-B0FF-B9C37628DD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0DE5B0-4E74-4188-B0FF-B9C37628DD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0DE5B0-4E74-4188-B0FF-B9C37628DD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EDA878-D654-4945-833F-BD1693FC5B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EDA878-D654-4945-833F-BD1693FC5B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EDA878-D654-4945-833F-BD1693FC5B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EDA878-D654-4945-833F-BD1693FC5B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FF4949C-4886-4AB0-9A64-1283D9CA340A} = {578FCFE2-7A89-487F-81CC-08B148AF960E}
+		{2D84EBF5-CAB7-4AB1-A77C-C628E8458822} = {0C18FD23-8DA1-4C15-889D-4BB39ED1A446}
+		{A0C00CF9-E3B2-429B-B0A6-2BD8E7EDAEEA} = {0C18FD23-8DA1-4C15-889D-4BB39ED1A446}
+		{0A302A46-F90B-4FC0-870E-42F5A033F063} = {87977956-CD96-43AB-936A-EA52A2B140DB}
+		{ABD02147-34C9-480C-A702-CF9EFC67A9AF} = {0E83EF33-24F3-486D-9C16-ED6A2E4EDBEF}
+		{FD0DE5B0-4E74-4188-B0FF-B9C37628DD6C} = {2D84EBF5-CAB7-4AB1-A77C-C628E8458822}
+		{02EDA878-D654-4945-833F-BD1693FC5B01} = {A0C00CF9-E3B2-429B-B0A6-2BD8E7EDAEEA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3985FC0-4B57-46AF-8247-E5B2EFA6B24D}
+	EndGlobalSection
+EndGlobal

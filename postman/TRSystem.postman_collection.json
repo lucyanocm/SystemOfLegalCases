@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "f336a0d0-ad21-45c1-91c9-7fd5bfc4b78e",
+		"name": "TRSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"caseNumber\": \"1111211-11.1111.1.11.1122\",\r\n  \"courtName\": \"Supreme Federal Court\",\r\n  \"lawyerResponsible\": \"Lucyano Campos Martins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/legalcase",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"legalcase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by All fields",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/v1/legalcase?id&casenumber&courtname&lawyerresponsible&initial_registrationdate&final_registrationdate&page&pagesize&fieldOrder",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"legalcase"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null
+						},
+						{
+							"key": "casenumber",
+							"value": null
+						},
+						{
+							"key": "courtname",
+							"value": null
+						},
+						{
+							"key": "lawyerresponsible",
+							"value": null
+						},
+						{
+							"key": "initial_registrationdate",
+							"value": null
+						},
+						{
+							"key": "final_registrationdate",
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": null
+						},
+						{
+							"key": "pagesize",
+							"value": null
+						},
+						{
+							"key": "fieldOrder",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2ae3a02d-740c-438a-8680-37012beb1619\",\r\n    \"caseNumber\": \"1111211-11.1111.1.11.1122\",\r\n    \"courtName\": \"Supreme Federal Court\",\r\n    \"lawyerResponsible\": \"Lucyano Campos Martins\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/v1/legalcase/2ae3a02d-740c-438a-8680-37012beb1619",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"legalcase",
+						"2ae3a02d-740c-438a-8680-37012beb1619"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/v1/legalcase/2ae3a02d-740c-438a-8680-37012beb1619",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"v1",
+						"legalcase",
+						"2ae3a02d-740c-438a-8680-37012beb1619"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
